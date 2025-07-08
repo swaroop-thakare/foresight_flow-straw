@@ -227,7 +227,7 @@ export const EnhancedPromptConsultant: React.FC<EnhancedPromptConsultantProps> =
           </motion.div>
           <div className="flex-1">
             <h2 className="text-white font-bold text-2xl">Raymond AI Assistant</h2>
-            <p className="text-slate-300 text-lg">Advanced LLM with hyperlocal intelligence & market analysis</p>
+            <p className="text-slate-300 text-lg">ForesightFlow X Arealis - Advanced AI with hyperlocal intelligence & market analysis</p>
           </div>
           <div className="flex items-center gap-3">
             <button

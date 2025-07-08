@@ -57,9 +57,9 @@ function App() {
               </div>
               <div>
                 <h1 className="text-3xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-                  Raymond Intelligence Suite
+                  ForesightFlow X Arealis
                 </h1>
-                <p className="text-gray-600 font-medium text-lg">Real-time Market Intelligence & Strategic Business Analytics</p>
+                <p className="text-gray-600 font-medium text-lg">AI-Powered Retail Intelligence & Strategic Business Analytics Platform</p>
               </div>
             </motion.div>
             
