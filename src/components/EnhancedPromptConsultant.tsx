@@ -182,32 +182,32 @@ export const EnhancedPromptConsultant: React.FC<EnhancedPromptConsultantProps> =
 
   const smartPrompts = [
     {
-      text: "Analyze Raymond's wedding season performance vs competitors in Pune market",
-      category: "Competitive Analysis",
+      text: "Give me the latest inventory report with aging analysis and stockout predictions",
+      category: "Inventory Optimization",
       icon: Users,
       color: "from-purple-500 to-pink-500",
-      function: "research_market_trends"
+      function: "analyze_inventory_performance"
     },
     {
-      text: "Predict demand for premium formal wear in Shivajinagar area for next quarter",
-      category: "Demand Forecasting",
+      text: "Show me last month's sales performance with AI-powered insights and recommendations",
+      category: "Sales Optimization",
       icon: TrendingUp,
       color: "from-blue-500 to-cyan-500",
-      function: "predict_demand_forecast"
+      function: "analyze_sales_performance"
     },
     {
-      text: "What's the local sentiment around Raymond's custom tailoring services?",
-      category: "Sentiment Analysis",
+      text: "Analyze customer segmentation and provide targeted engagement strategies",
+      category: "Customer Intelligence",
       icon: Star,
       color: "from-emerald-500 to-teal-500",
-      function: "analyze_customer_sentiment"
+      function: "analyze_customer_segments"
     },
     {
-      text: "Optimize inventory mix for upcoming festive season based on hyperlocal trends",
-      category: "Inventory Optimization",
+      text: "Create strategic business recommendations with ROI projections and implementation roadmap",
+      category: "Strategic Planning",
       icon: Target,
       color: "from-amber-500 to-orange-500",
-      function: "optimize_inventory_mix"
+      function: "generate_business_strategy"
     }
   ];
 

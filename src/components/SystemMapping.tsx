@@ -109,7 +109,7 @@ export const SystemMapping: React.FC = () => {
             </div>
             <div>
               <h2 className="text-white font-bold text-lg">System Architecture Mapping</h2>
-              <p className="text-slate-300 text-sm">ForesightFlow X Arealis - Technical System Overview</p>
+              <p className="text-slate-300 text-sm">ForesightFlow X Arealis - AI-Powered Retail Intelligence Architecture</p>
             </div>
           </div>
           <div className="flex gap-2">

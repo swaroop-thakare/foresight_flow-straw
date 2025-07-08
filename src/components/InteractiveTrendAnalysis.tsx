@@ -91,7 +91,7 @@ export const InteractiveTrendAnalysis: React.FC = () => {
             </div>
             <div>
               <h2 className="text-white font-bold text-xl">Hyperlocal Trend Intelligence</h2>
-              <p className="text-slate-300 text-sm">Location-based insights & sentiment analysis for Raymond Shivajinagar</p>
+              <p className="text-slate-300 text-sm">ForesightFlow X Arealis - Location-based insights & sentiment analysis</p>
             </div>
           </div>
           <div className="flex gap-2">

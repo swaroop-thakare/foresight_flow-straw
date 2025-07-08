@@ -565,7 +565,7 @@ export const DataPipelineTab: React.FC = () => {
           </div>
           <div>
             <h2 className="text-2xl font-bold text-gray-900">Data Ingestion & Query Pipeline</h2>
-            <p className="text-gray-600">Upload, clean, and query retail data files with AI-powered insights</p>
+            <p className="text-gray-600">ForesightFlow X Arealis - Upload, clean, and query retail data files with AI-powered insights</p>
           </div>
         </div>
 

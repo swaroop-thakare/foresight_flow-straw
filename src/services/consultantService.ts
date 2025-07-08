@@ -335,7 +335,7 @@ export class ConsultantService {
     };
   }
 
-  private generateAdvancedInsights(
+  private generateCaseStudyInsights(
     query: string, 
     intent: string, 
     trends: TrendData[], 
@@ -345,59 +345,102 @@ export class ConsultantService {
   ): string[] {
     const insights: string[] = [];
     
+    // Generate case study format based on intent
+    if (intent.includes('inventory') || query.toLowerCase().includes('inventory')) {
+      insights.push(
+        `🧾 **Case Study: Inventory Optimization at Raymond Shivajinagar, Pune**\n\n` +
+        `🏬 **Business Context:**\n` +
+        `Raymond's Shivajinagar store caters to premium clientele with high expectations around product variety, custom tailoring, and festive ethnic collections. Current challenges:\n` +
+        `• Overstock of seasonal ethnic wear post-festive period\n` +
+        `• Frequent stockouts in core formalwear sizes\n` +
+        `• Reactive inventory planning with minimal data visibility\n\n` +
+        `📄 **AI-Powered Report Summary:**\n` +
+        `"48% of ethnic SKUs unsold for 60+ days. High sell-through of formalwear (especially blazers in M-size). Recommend bundling stagnant ethnic stock and prioritizing restock of fast-moving SKUs."\n\n` +
+        `🔮 **AI Forecast & Prediction:**\n` +
+        `• Projected stockout in M-size blazers within 5 days if restocking not initiated\n` +
+        `• Clearance on ethnic wear required to avoid 15% YoY write-off loss\n` +
+        `• Demand spike expected for wedding season inventory in next 30 days`
+      );
+      
+      insights.push(
+        `🚀 **Strategic Business Recommendations:**\n\n` +
+        `**Option A:** Launch "Bundle & Save" festive clearance (Ethnic + Formal Shirt)\n` +
+        `*Expected Impact:* Clear dead stock, raise AOV by 25%\n\n` +
+        `**Option B:** Auto-restock top 10 SKUs weekly\n` +
+        `*Expected Impact:* Reduce lost revenue from stockouts by 40%\n\n` +
+        `**Option C:** Reconfigure shelf layout using demand heatmap\n` +
+        `*Expected Impact:* Improve in-store conversions by 18%`
+      );
+    }
+    
+    if (intent.includes('sales') || query.toLowerCase().includes('sales')) {
+      insights.push(
+        `🧾 **Case Study: Sales Optimization at Raymond JM Road, Pune**\n\n` +
+        `🏬 **Business Context:**\n` +
+        `The JM Road store is positioned in a high-footfall area but faces challenges:\n` +
+        `• Mid-week sales drop-offs (24% decline Tue-Thu)\n` +
+        `• Low campaign attribution clarity\n` +
+        `• Minimal customer engagement post-purchase\n\n` +
+        `📄 **AI-Powered Report Summary:**\n` +
+        `"June revenue ₹14.2 Lakhs. 24% weekday dip observed. 61% new customers. High-margin combos performing well. Recommend mid-week engagement strategy and loyalty-linked offers."\n\n` +
+        `🔮 **AI Forecast & Prediction:**\n` +
+        `• Sales expected to decline further mid-week unless proactive interventions occur\n` +
+        `• High-spending customers likely to increase frequency by 20% if engaged via loyalty touchpoints\n` +
+        `• Weekend sales projected to grow 15% with targeted promotions`
+      );
+      
+      insights.push(
+        `🚀 **Strategic Business Recommendations:**\n\n` +
+        `**Option A:** Launch "Mid-Week Must-Haves" with combo offers\n` +
+        `*Expected Impact:* Boost weekday footfall by 30%\n\n` +
+        `**Option B:** Auto-send coupons via WhatsApp to repeat buyers\n` +
+        `*Expected Impact:* Raise conversion & retention by 25%\n\n` +
+        `**Option C:** Enable bill tagging for campaigns\n` +
+        `*Expected Impact:* Track ROI of promotions in real-time, improve campaign efficiency by 35%`
+      );
+    }
+    
+    if (intent.includes('customer') || query.toLowerCase().includes('customer')) {
+      insights.push(
+        `🧾 **Case Study: Customer Intelligence & Segmentation Analysis**\n\n` +
+        `🏬 **Business Context:**\n` +
+        `Raymond's customer base spans multiple generations with varying preferences:\n` +
+        `• 52% Millennials (primary wedding market)\n` +
+        `• 35% Gen X (corporate buyers)\n` +
+        `• 13% Gen Z (emerging segment)\n\n` +
+        `📄 **AI-Powered Customer Analysis:**\n` +
+        `"High-value customers (₹15K+ AOV) show 89% retention rate. Wedding segment customers have 3.2x lifetime value. Corporate buyers prefer weekday shopping with 67% conversion rate."\n\n` +
+        `🔮 **Customer Behavior Predictions:**\n` +
+        `• Wedding season will drive 40% increase in high-value transactions\n` +
+        `• Corporate segment likely to grow 25% with targeted B2B approach\n` +
+        `• Gen Z engagement can improve 50% with digital-first strategies`
+      );
+    }
+    
     // Add function-specific insights if available
     if (functionResult) {
       if (functionResult.analysis) {
-        insights.push(functionResult.analysis);
+        insights.push(`📊 **Dashboard Insights:** ${functionResult.analysis}`);
       }
       if (functionResult.localTrends) {
-        insights.push(`Hyperlocal analysis reveals: ${functionResult.localTrends.join(', ')}`);
+        insights.push(`🗺️ **Hyperlocal Intelligence:** ${functionResult.localTrends.join(', ')}`);
       }
       if (functionResult.overallSentiment) {
-        insights.push(`Customer sentiment analysis shows ${functionResult.overallSentiment}% positive sentiment across all touchpoints`);
+        insights.push(`💭 **Sentiment Analysis:** ${functionResult.overallSentiment}% positive sentiment across all touchpoints`);
       }
     }
     
-    switch (intent) {
-      case 'hyperlocal-analysis':
-        insights.push(
-          `Shivajinagar hyperlocal intelligence: IT professionals within 2km radius driving 45% of formal wear sales, with peak demand during weekdays 9-11 AM and 6-8 PM shopping patterns.`
-        );
-        insights.push(
-          `Local demographic analysis: 52% Millennials (primary wedding market), 35% Gen X (corporate buyers), 13% Gen Z (emerging segment) - perfectly aligned with Raymond's premium positioning.`
-        );
-        break;
-      
-      case 'sentiment-analysis':
-        insights.push(
-          `Social sentiment tracking: Raymond Shivajinagar maintains 91% positive sentiment with custom tailoring (94%) and store experience (92%) as top-rated aspects across 5,670 mentions.`
-        );
-        insights.push(
-          `Customer feedback analysis: Premium quality perception strong (89% positive), pricing concerns minimal (6% negative), with wedding collection receiving highest engagement.`
-        );
-        break;
-      
-      case 'competitive-intelligence':
-        insights.push(
-          `Competitive landscape shift: Manyavar expanding wedding segment (28% market share), Allen Solly price competition in formal wear, while Raymond maintains premium differentiation through custom tailoring.`
-        );
-        insights.push(
-          `Market positioning advantage: Raymond's heritage brand value and made-to-measure services create sustainable competitive moat vs fast-fashion competitors.`
-        );
-        break;
-      
-      default:
-        insights.push(
-          `Raymond Shivajinagar market intelligence: Premium menswear segment showing 18.5% growth with wedding season and corporate demand driving momentum in Pune's expanding professional market.`
-        );
-        insights.push(
-          `Strategic positioning analysis: Heritage brand strength and custom tailoring expertise positioning Raymond ahead of mid-market competitors in the ₹8,750 average order value segment.`
-        );
-    }
-    
-    // Add hyperlocal context
+    // Add summary of value delivered
     insights.push(
-      `Hyperlocal market dynamics: ${context.hyperlocalFactors[Math.floor(Math.random() * context.hyperlocalFactors.length)]} - creating targeted opportunities for Raymond's premium positioning.`
+      `📌 **Summary of Value Delivered by ForesightFlow X Arealis:**\n\n` +
+      `**Operational Layer:** Real-time SKU alerts, predictive restocking, automated inventory optimization\n` +
+      `**Strategic Layer:** Forecast-driven promotions, customer segmentation, competitive intelligence\n` +
+      `**Tactical Layer:** Day-wise demand trends, visual reports for staff decisions, campaign ROI tracking\n` +
+      `**Competitive Advantage:** Faster decisions than competitors relying on static BI tools\n\n` +
+      `💡 **Why It Matters for Raymond's Business:**\n` +
+      `• Reduces working capital lock through better inventory rotation\n` +
+      `• Boosts sales & loyalty via micro-targeted promotions and CRM sync\n` +
+      `• Aligns with Raymond's push toward digitally connected retail and omnichannel excellence`
     );
     
     return insights;

@@ -510,7 +510,7 @@ export const RealTimeInsightsDashboard: React.FC = () => {
           </div>
           <div>
             <h3 className="text-xl font-semibold text-gray-900">AI Strategic Recommendations</h3>
-            <p className="text-gray-600 text-sm">Real-time strategic insights based on market intelligence</p>
+            <p className="text-gray-600 text-sm">ForesightFlow X Arealis - Real-time strategic insights based on market intelligence</p>
           </div>
         </div>
 

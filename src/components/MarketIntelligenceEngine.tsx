@@ -262,7 +262,7 @@ export const MarketIntelligenceEngine: React.FC = () => {
             </div>
             <div>
               <h2 className="text-white font-bold text-xl">Market Intelligence & Strategy Engine</h2>
-              <p className="text-slate-300 text-sm">AI-powered strategic insights and competitive intelligence for Raymond</p>
+              <p className="text-slate-300 text-sm">ForesightFlow X Arealis - AI-powered strategic insights and competitive intelligence</p>
             </div>
           </div>
           <div className="flex gap-2">
