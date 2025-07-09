@@ -4,28 +4,28 @@ import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Toolti
 import { RotateCcw, AlertTriangle, TrendingDown, Package } from 'lucide-react';
 
 const returnReasons = [
-  { reason: 'Size Issue', count: 145, percentage: 45, color: '#EF4444' },
-  { reason: 'Color Mismatch', count: 80, percentage: 25, color: '#F59E0B' },
-  { reason: 'Material Quality', count: 48, percentage: 15, color: '#8B5CF6' },
-  { reason: 'Damaged', count: 32, percentage: 10, color: '#6B7280' },
-  { reason: 'Others', count: 16, percentage: 5, color: '#10B981' }
+  { reason: 'Size/Fit Issue', count: 89, percentage: 42, color: '#EF4444' },
+  { reason: 'Fabric Quality', count: 56, percentage: 26, color: '#F59E0B' },
+  { reason: 'Color Mismatch', count: 34, percentage: 16, color: '#8B5CF6' },
+  { reason: 'Tailoring Issue', count: 23, percentage: 11, color: '#6B7280' },
+  { reason: 'Others', count: 10, percentage: 5, color: '#10B981' }
 ];
 
 const brandReturnData = [
-  { brand: 'Zara', returns: 89, sales: 1200, rate: 7.4, topReason: 'Size Issue' },
-  { brand: 'H&M', returns: 76, sales: 980, rate: 7.8, topReason: 'Color Mismatch' },
-  { brand: 'Levi\'s', returns: 34, sales: 650, rate: 5.2, topReason: 'Size Issue' },
-  { brand: 'BIBA', returns: 45, sales: 780, rate: 5.8, topReason: 'Material Quality' },
-  { brand: 'Nike', returns: 67, sales: 890, rate: 7.5, topReason: 'Size Issue' },
-  { brand: 'Adidas', returns: 52, sales: 720, rate: 7.2, topReason: 'Size Issue' }
+  { brand: 'Formal Wear', returns: 89, sales: 1200, rate: 7.4, topReason: 'Size/Fit Issue' },
+  { brand: 'Ethnic Wear', returns: 56, sales: 980, rate: 5.7, topReason: 'Fabric Quality' },
+  { brand: 'Casual Wear', returns: 34, sales: 650, rate: 5.2, topReason: 'Size/Fit Issue' },
+  { brand: 'Accessories', returns: 23, sales: 780, rate: 2.9, topReason: 'Color Mismatch' },
+  { brand: 'Premium Suits', returns: 12, sales: 890, rate: 1.3, topReason: 'Tailoring Issue' },
+  { brand: 'Custom Tailoring', returns: 8, sales: 720, rate: 1.1, topReason: 'Fit Adjustment' }
 ];
 
 const trendReturnData = [
-  { trend: 'Y2K Revival', returns: 78, sales: 890, rate: 8.8, issue: 'Sizing inconsistency' },
-  { trend: 'Cottagecore', returns: 34, sales: 670, rate: 5.1, issue: 'Color expectations' },
-  { trend: 'Tech-Wear', returns: 23, sales: 450, rate: 5.1, issue: 'Fit preferences' },
-  { trend: 'Maximalist', returns: 45, sales: 560, rate: 8.0, issue: 'Pattern mismatch' },
-  { trend: 'Sustainable', returns: 19, sales: 420, rate: 4.5, issue: 'Material feel' }
+  { trend: 'Wedding Season Premium', returns: 34, sales: 890, rate: 3.8, issue: 'Custom fit requirements' },
+  { trend: 'Corporate Professional', returns: 45, sales: 670, rate: 6.7, issue: 'Size standardization' },
+  { trend: 'Premium Casual', returns: 23, sales: 450, rate: 5.1, issue: 'Fit preferences' },
+  { trend: 'Festive Collection', returns: 28, sales: 560, rate: 5.0, issue: 'Color expectations' },
+  { trend: 'Custom Tailoring', returns: 8, sales: 420, rate: 1.9, issue: 'Minor adjustments' }
 ];
 
 const monthlyReturns = [

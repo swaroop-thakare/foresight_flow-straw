@@ -4,40 +4,40 @@ import { Package, AlertTriangle, Clock, TrendingDown } from 'lucide-react';
 
 const inventoryData = [
   {
-    brand: 'Zara',
-    '0-30': { count: 145, value: 217500 },
-    '31-60': { count: 89, value: 133500 },
-    '61+': { count: 34, value: 51000 }
+    brand: 'Raymond Suits',
+    '0-30': { count: 89, value: 1690000 },
+    '31-60': { count: 45, value: 855000 },
+    '61+': { count: 12, value: 228000 }
   },
   {
-    brand: 'H&M',
-    '0-30': { count: 167, value: 167000 },
+    brand: 'Raymond Shirts',
+    '0-30': { count: 234, value: 585000 },
+    '31-60': { count: 89, value: 222500 },
+    '61+': { count: 23, value: 57500 }
+  },
+  {
+    brand: 'Ethnic Collection',
+    '0-30': { count: 67, value: 1675000 },
+    '31-60': { count: 34, value: 850000 },
+    '61+': { count: 8, value: 200000 }
+  },
+  {
+    brand: 'Casual Wear',
+    '0-30': { count: 156, value: 624000 },
+    '31-60': { count: 67, value: 268000 },
+    '61+': { count: 18, value: 72000 }
+  },
+  {
+    brand: 'Accessories',
+    '0-30': { count: 345, value: 345000 },
     '31-60': { count: 123, value: 123000 },
-    '61+': { count: 67, value: 67000 }
+    '61+': { count: 34, value: 34000 }
   },
   {
-    brand: 'Levi\'s',
-    '0-30': { count: 98, value: 147000 },
-    '31-60': { count: 45, value: 67500 },
-    '61+': { count: 23, value: 34500 }
-  },
-  {
-    brand: 'BIBA',
-    '0-30': { count: 134, value: 201000 },
-    '31-60': { count: 78, value: 117000 },
-    '61+': { count: 45, value: 67500 }
-  },
-  {
-    brand: 'Nike',
-    '0-30': { count: 189, value: 283500 },
-    '31-60': { count: 67, value: 100500 },
-    '61+': { count: 28, value: 42000 }
-  },
-  {
-    brand: 'Adidas',
-    '0-30': { count: 156, value: 234000 },
-    '31-60': { count: 89, value: 133500 },
-    '61+': { count: 34, value: 51000 }
+    brand: 'Premium Fabrics',
+    '0-30': { count: 78, value: 390000 },
+    '31-60': { count: 45, value: 225000 },
+    '61+': { count: 15, value: 75000 }
   }
 ];
 

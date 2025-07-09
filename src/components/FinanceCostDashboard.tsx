@@ -5,57 +5,57 @@ import { DollarSign, TrendingDown, AlertCircle, Target } from 'lucide-react';
 
 const financialData = [
   {
-    category: 'Denim',
-    revenue: 850000,
-    cost: 510000,
-    profit: 340000,
+    category: 'Formal Wear',
+    revenue: 1450000,
+    cost: 870000,
+    profit: 580000,
     margin: 40,
-    discounts: 85000,
-    returns: 42500
+    discounts: 72500,
+    returns: 29000
   },
   {
-    category: 'Ethnic',
-    revenue: 720000,
-    cost: 432000,
-    profit: 288000,
+    category: 'Ethnic Wear',
+    revenue: 890000,
+    cost: 534000,
+    profit: 356000,
     margin: 40,
-    discounts: 72000,
-    returns: 36000
+    discounts: 44500,
+    returns: 17800
   },
   {
-    category: 'Casual',
-    revenue: 680000,
-    cost: 476000,
-    profit: 204000,
+    category: 'Casual Wear',
+    revenue: 650000,
+    cost: 455000,
+    profit: 195000,
     margin: 30,
-    discounts: 68000,
-    returns: 34000
+    discounts: 32500,
+    returns: 13000
   },
   {
-    category: 'Formal',
-    revenue: 520000,
-    cost: 364000,
-    profit: 156000,
-    margin: 30,
-    discounts: 52000,
-    returns: 26000
+    category: 'Accessories',
+    revenue: 280000,
+    cost: 168000,
+    profit: 112000,
+    margin: 40,
+    discounts: 14000,
+    returns: 5600
   },
   {
-    category: 'Activewear',
-    revenue: 450000,
-    cost: 315000,
-    profit: 135000,
-    margin: 30,
-    discounts: 45000,
-    returns: 22500
+    category: 'Fabrics',
+    revenue: 420000,
+    cost: 252000,
+    profit: 168000,
+    margin: 40,
+    discounts: 21000,
+    returns: 8400
   }
 ];
 
 const lowMarginProducts = [
   { name: 'Basic Cotton Tees', category: 'Casual', margin: 12, volume: 450, action: 'Price Review' },
-  { name: 'Polyester Blend Shirts', category: 'Formal', margin: 15, volume: 320, action: 'Supplier Negotiation' },
-  { name: 'Fast Fashion Dresses', category: 'Casual', margin: 18, volume: 280, action: 'Quality Upgrade' },
-  { name: 'Generic Activewear', category: 'Activewear', margin: 20, volume: 190, action: 'Brand Positioning' }
+  { name: 'Basic Formal Shirts', category: 'Formal', margin: 15, volume: 320, action: 'Supplier Negotiation' },
+  { name: 'Entry Level Trousers', category: 'Casual', margin: 18, volume: 280, action: 'Quality Upgrade' },
+  { name: 'Basic Accessories', category: 'Accessories', margin: 20, volume: 190, action: 'Brand Positioning' }
 ];
 
 const monthlyTrends = [

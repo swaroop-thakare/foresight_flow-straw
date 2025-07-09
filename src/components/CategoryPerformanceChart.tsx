@@ -5,52 +5,52 @@ import { Package, TrendingUp, Filter, Eye } from 'lucide-react';
 
 const categoryData = [
   {
-    category: 'Denim',
+    category: 'Formal Wear',
     brands: [
-      { brand: 'Levi\'s', units: 245, revenue: 367500, trend: 'Classic' },
-      { brand: 'Zara', units: 189, revenue: 283500, trend: 'Y2K Revival' },
-      { brand: 'H&M', units: 156, revenue: 156000, trend: 'Sustainable' }
+      { brand: 'Raymond Suits', units: 89, revenue: 1690000, trend: 'Corporate Professional' },
+      { brand: 'Raymond Shirts', units: 234, revenue: 585000, trend: 'Business Formal' },
+      { brand: 'Raymond Trousers', units: 145, revenue: 435000, trend: 'Office Wear' }
     ]
   },
   {
-    category: 'Ethnic',
+    category: 'Ethnic Wear',
     brands: [
-      { brand: 'BIBA', units: 198, revenue: 297000, trend: 'Fusion' },
-      { brand: 'Fabindia', units: 167, revenue: 334000, trend: 'Traditional' },
-      { brand: 'W', units: 134, revenue: 201000, trend: 'Contemporary' }
+      { brand: 'Sherwanis', units: 67, revenue: 1675000, trend: 'Wedding Season Premium' },
+      { brand: 'Bandhgalas', units: 34, revenue: 442000, trend: 'Indo-Western' },
+      { brand: 'Kurtas', units: 89, revenue: 267000, trend: 'Festive Collection' }
     ]
   },
   {
-    category: 'Casual',
+    category: 'Casual Wear',
     brands: [
-      { brand: 'Nike', units: 223, revenue: 334500, trend: 'Athleisure' },
-      { brand: 'Adidas', units: 201, revenue: 301500, trend: 'Streetwear' },
-      { brand: 'Puma', units: 178, revenue: 267000, trend: 'Performance' }
+      { brand: 'Chinos', units: 89, revenue: 356000, trend: 'Premium Casual' },
+      { brand: 'Polo Shirts', units: 123, revenue: 307500, trend: 'Weekend Wear' },
+      { brand: 'Casual Shirts', units: 156, revenue: 390000, trend: 'Smart Casual' }
     ]
   },
   {
-    category: 'Formal',
+    category: 'Accessories',
     brands: [
-      { brand: 'Van Heusen', units: 145, revenue: 290000, trend: 'Business' },
-      { brand: 'Arrow', units: 123, revenue: 246000, trend: 'Professional' },
-      { brand: 'Peter England', units: 98, revenue: 147000, trend: 'Corporate' }
+      { brand: 'Ties & Cufflinks', units: 145, revenue: 145000, trend: 'Professional' },
+      { brand: 'Belts & Wallets', units: 123, revenue: 184500, trend: 'Premium Leather' },
+      { brand: 'Pocket Squares', units: 98, revenue: 49000, trend: 'Formal Accessories' }
     ]
   }
 ];
 
 const trendColors = {
-  'Classic': '#3B82F6',
-  'Y2K Revival': '#8B5CF6',
-  'Sustainable': '#10B981',
-  'Fusion': '#F59E0B',
-  'Traditional': '#EF4444',
-  'Contemporary': '#06B6D4',
-  'Athleisure': '#84CC16',
-  'Streetwear': '#F97316',
-  'Performance': '#EC4899',
-  'Business': '#6366F1',
-  'Professional': '#14B8A6',
-  'Corporate': '#A855F7'
+  'Corporate Professional': '#3B82F6',
+  'Business Formal': '#8B5CF6',
+  'Office Wear': '#10B981',
+  'Wedding Season Premium': '#F59E0B',
+  'Indo-Western': '#EF4444',
+  'Festive Collection': '#06B6D4',
+  'Premium Casual': '#84CC16',
+  'Weekend Wear': '#F97316',
+  'Smart Casual': '#EC4899',
+  'Professional': '#6366F1',
+  'Premium Leather': '#14B8A6',
+  'Formal Accessories': '#A855F7'
 };
 
 export const CategoryPerformanceChart: React.FC = () => {
